@@ -15,4 +15,108 @@ body nav a:hover {
   background-color: #ddd;
   color: black;
 }
+
+body .menu-icon {
+  font-size: large;
+  background-color: black;
+  color: white;
+}
+
+body .nav-text {
+  font-size: x-small;
+  font-weight: bold;
+}
+
+body .form-inline .form-control {
+  border: none;
+  border-bottom: 2px solid orange;
+  border-radius: 0px;
+}
+
+body .form-inline .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+body .btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.filter-by p {
+  font-size: small;
+  color: black;
+  opacity: 0.5;
+}
+
+.filter-by button {
+  font-size: small;
+  border-bottom: 1px solid black;
+  border-radius: 0px;
+}
+
+.filter-by #collapseOne, .filter-by #collapseTwo, .filter-by #collapseThree {
+  font-size: x-small;
+}
+
+.products {
+  padding: 1rem 0;
+}
+
+.products .product-center {
+  width: 70vw;
+  margin: 0 auto;
+  max-width: 1170px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(260px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.products .product-center .product {
+  max-width: 220px;
+}
+
+.products .product-center .product .img-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.products .product-center .product .img-container .product-img {
+  display: block;
+  min-height: 12rem;
+  width: 100%;
+}
+
+.products .product-center .product p {
+  text-transform: capitalize;
+  font-size: x-small;
+  font-weight: bold;
+  margin-top: -17px;
+  z-index: 161;
+  position: relative;
+  bottom: 15px;
+  background-color: white;
+  width: 75%;
+  height: 34px;
+  line-height: 65px;
+}
+
+.products .product-center .product h4 {
+  font-size: x-small;
+  margin-top: -1.25rem;
+  margin-bottom: 3rem;
+  text-align: right;
+}
+
+.products .product-center .product h2 {
+  font-size: x-small;
+  margin-top: -0.5rem;
+}
+
+.buy-btn {
+  position: absolute;
+  left: 150px;
+  bottom: 254px;
+}
 /*# sourceMappingURL=styles.css.map */
