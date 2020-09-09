@@ -1,0 +1,34 @@
+{
+    "products": [
+        {
+            "title": "Momo",
+            "type": "Lounge",
+            "price": 100,
+            "productImg": ""
+        },
+        {
+            "title": "Momo",
+            "type": "Lounge",
+            "price": 100,
+            "productImg": ""
+        },
+        {
+            "title": "Momo",
+            "type": "Lounge",
+            "price": 100,
+            "productImg": ""
+        },
+        {
+            "title": "Momo",
+            "type": "Lounge",
+            "price": 100,
+            "productImg": ""
+        },
+        {
+            "title": "Momo",
+            "type": "Lounge",
+            "price": 100,
+            "productImg": ""
+        }
+    ]
+}
