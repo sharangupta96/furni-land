@@ -3,7 +3,7 @@ $dark-color: black;
 $light-color: #ddd;
 @mixin nav-text {
     font-size: x-small;
-            font-weight: bold;
+    font-weight: bold;
 }
 body {
     font-family: $font-stack;
