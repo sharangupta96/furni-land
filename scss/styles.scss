@@ -1,6 +1,10 @@
 $font-stack: Arial, Helvetica, sans-serif;
 $dark-color: black;
 $light-color: #ddd;
+@mixin nav-text {
+    font-size: x-small;
+            font-weight: bold;
+}
 body {
     font-family: $font-stack;
     nav a {
@@ -15,6 +19,95 @@ body {
             color: $dark-color;
         }
     }
+    .menu-icon {
+        font-size: large;
+        background-color: black;
+        color:white;
+    }
+    .nav-text {
+        @include nav-text;
+    }
+    .form-inline {
+        .form-control {
+            border: none;
+            border-bottom: 2px solid orange;
+            border-radius: 0px;
+            &:focus{
+                box-shadow: none;
+            }
+        }
+    }
+    .btn {
+        &:focus {
+            box-shadow: none;
+        }
+    }
 }
-  
-  
+.filter-by {
+    p {
+        font-size: small;
+        color: $dark-color;
+        opacity: 0.5;
+    }
+    button {
+        font-size: small;
+        border-bottom: 1px solid $dark-color;
+        border-radius: 0px;
+    }
+    #collapseOne, #collapseTwo, #collapseThree {
+        font-size: x-small;
+    }
+    
+}
+.products {
+    padding: 1rem 0;
+    .product-center {
+        width: 70vw;
+        margin: 0 auto;
+        max-width: 1170px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        .product {
+            max-width: 220px;
+            .img-container {
+                position: relative;
+                overflow: hidden;
+                .product-img {
+                    display: block;
+                    min-height: 12rem;
+                    width: 100%;
+                }
+            }
+            p {
+                text-transform: capitalize;
+                font-size: x-small;
+                font-weight: bold;
+                margin-top: -17px;
+                z-index: 161;
+                position: relative;
+                bottom: 15px;
+                background-color: white;
+                width: 75%;
+                height: 34px;
+                line-height: 65px;
+            }
+            h4 {
+                font-size: x-small;
+                margin-top: -1.25rem;
+                margin-bottom: 3rem;
+                text-align: right;
+            }
+            h2 {
+                font-size: x-small;
+                margin-top: -0.5rem;
+            }
+        }
+    }
+    
+}
+
+.buy-btn {
+    position: absolute;
+    left: 150px;
+    bottom: 254px;
+}
