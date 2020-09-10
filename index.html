@@ -11,11 +11,6 @@
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="scss/styles.css">
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-    </style>
 </head>
 
 <body class="container">
@@ -53,7 +48,7 @@
     <div id="bodyDOM" class="row container">
         <!-- filterby section -->
         <section class="col-lg-3 pt-3 filter-by">
-            <p>Filer By</p>
+            <p class="filter-text">Filer By</p>
             <div id="accordion">
                 <div id="headingOne">
                     <h5 class="mb-2">
@@ -92,6 +87,11 @@
                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                     In Design Phase
                 </div>
+            </div>
+            <div class="slidecontainer">
+                <p class="price-range pt-3 mb-0">Price Range</p>
+                <input type="range" min="0" max="10000" step="500" value="0" class="slider" id="myRange">
+                <p class="price-range">$<span id="sliderValue"></span></p>
             </div>
         </section>
         <!-- end of filterby section -->

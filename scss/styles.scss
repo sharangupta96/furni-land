@@ -44,7 +44,7 @@ body {
     }
 }
 .filter-by {
-    p {
+    .filter-text {
         font-size: small;
         color: $dark-color;
         opacity: 0.5;
@@ -54,10 +54,9 @@ body {
         border-bottom: 1px solid $dark-color;
         border-radius: 0px;
     }
-    #collapseOne, #collapseTwo, #collapseThree {
+    #collapseOne, #collapseTwo, #collapseThree, .price-range {
         font-size: x-small;
     }
-    
 }
 .products {
     padding: 1rem 0;
@@ -110,4 +109,39 @@ body {
     position: absolute;
     left: 150px;
     bottom: 254px;
+}
+
+.slidecontainer {
+.slider {
+    -webkit-appearance: none;
+    width: 80%;
+    height: 2px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background:lightsalmon;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+  }
 }

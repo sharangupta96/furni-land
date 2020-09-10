@@ -1,5 +1,7 @@
 const productsDOM = document.querySelector(".product-center");
 const bodyDOM = document.getElementById("bodyDOM");
+const slider = document.getElementById("myRange");
+const output = document.getElementById("sliderValue");
 
 // get the list of products using fetch
 class Products {
@@ -91,3 +93,18 @@ var showDetails = (id) => {
 
     );
 };
+output.innerHTML = slider.value;
+slider.oninput = function() {
+    output.innerHTML = this.value;
+    const products = new Products();
+    const productsUi = new ProductsUI();
+    products.getProducts().then((products) => {
+        console.log(products);
+        if(slider.value < 10000) {
+            var priceResult = products.filter((e) => { return parseInt(e.price) <= parseInt(slider.value) });
+        } else {
+            var priceResult = products;
+        }
+        productsUi.displayProducts(priceResult);
+    });
+}
